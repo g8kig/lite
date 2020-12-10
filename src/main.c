@@ -64,7 +64,7 @@ static void init_window_icon(void) {
 int main(int argc, char **argv) {
 #ifdef _WIN32
   HINSTANCE lib = GetModuleHandle("user32.dll");
-  int (*SetProcessDPIAware)() = (void*) GetProcAddress(lib, "SetProcessDPIAware");
+  int (* WINAPI SetProcessDPIAware)() = (void*) GetProcAddress(lib, "SetProcessDPIAware");
   SetProcessDPIAware();
 #endif
 
