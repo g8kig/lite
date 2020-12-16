@@ -182,7 +182,7 @@ keymap.add {
   ["shift+pageup"] = "doc:select-to-previous-page",
   ["shift+pagedown"] = "doc:select-to-next-page",
 
-  ["alt+x"] = "core:quit",
+  ["alt+shift+x"] = "core:quit",
 }
 
 return keymap
